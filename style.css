@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,700;0,900;1,100&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    position: relative;
+    min-height: 100vh;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 33px 20px;
+}
+
+.container .search-box{
+    position: relative;
+    height: 48px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+
+}
+
+.search-box input{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    outline: none;
+    border: none;
+    padding: 0 15px 0 45px;
+    background-color:orange;
+    color: #fff;
+    border-radius: 7px;
+}
+
+.search-box i{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #fff;
+}
+
+.container .images .image-box{
+    position: relative;
+    height: 300px;
+    width: 340px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.images{
+   width: 100%;
+   display:flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.images .image-box{
+    margin: 10px;
+
+}
+
+.images .image-box img{
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+    transition: transform 5s linear;
+}
+
+.image-box:hover img{
+    transform: scale(1.5);
+}
+
+.image-box h6{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 7px 7px 0 0;
+    text-transform: capitalize;
+}
